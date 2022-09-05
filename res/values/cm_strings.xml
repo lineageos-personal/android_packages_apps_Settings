@@ -205,4 +205,9 @@
     <!-- Compact Headsup -->
     <string name="notification_heads_up_compact_title">Compact Heads Up notifications</string>
     <string name="notification_heads_up_compact_summary">Show brief pop up notifications</string>
+
+    <!-- Per-app volume -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
 </resources>
