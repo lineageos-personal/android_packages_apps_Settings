@@ -201,4 +201,8 @@
 
     <!-- Notification screen on suppress -->
     <string name="notification_sound_suppress_screen_on_title">Suppress notification sound on screen on</string>
+
+    <!-- Compact Headsup -->
+    <string name="notification_heads_up_compact_title">Compact Heads Up notifications</string>
+    <string name="notification_heads_up_compact_summary">Show brief pop up notifications</string>
 </resources>
