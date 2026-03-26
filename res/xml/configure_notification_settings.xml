@@ -141,6 +141,12 @@
         android:key="advanced_section_header"
         android:title="@string/advanced_section_header">
 
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="notification_sound_suppress_screen_on"
+            android:title="@string/notification_sound_suppress_screen_on_title"
+            android:defaultValue="true"
+            android:order="32"/>
+
         <!--Adaptive Notifications-->
         <Preference
             android:fragment="com.android.settings.notification.PoliteNotificationsPreferenceFragment"

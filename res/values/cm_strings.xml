@@ -198,4 +198,7 @@
     <!-- Screenshot shutter sound  -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
     <string name="screenshot_shutter_sound_summary">Play sound when screenshot is taken</string>
+
+    <!-- Notification screen on suppress -->
+    <string name="notification_sound_suppress_screen_on_title">Suppress notification sound on screen on</string>
 </resources>
