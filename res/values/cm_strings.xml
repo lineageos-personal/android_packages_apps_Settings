@@ -203,12 +203,13 @@
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
     <string name="screenshot_shutter_sound_summary">Play sound when screenshot is taken</string>
 
-    <!-- Notification screen on suppress -->
-    <string name="notification_sound_suppress_screen_on_title">Suppress notification sound on screen on</string>
+    <!-- Noisy notifications -->
+    <string name="notification_sound_suppress_screen_on_title">Noisy notifications</string>
+    <string name="notification_sound_suppress_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
     <!-- Compact Headsup -->
-    <string name="notification_heads_up_compact_title">Compact Heads Up notifications</string>
-    <string name="notification_heads_up_compact_summary">Show brief pop up notifications</string>
+    <string name="notification_heads_up_compact_title">Compact heads-up</string>
+    <string name="notification_heads_up_compact_summary">Display notifications in compact size</string>
 
     <!-- Per-app volume -->
     <string name="app_volume">App volume</string>

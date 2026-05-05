@@ -151,6 +151,7 @@
         <com.android.settings.custom.preference.SecureSettingSwitchPreference
             android:key="notification_sound_suppress_screen_on"
             android:title="@string/notification_sound_suppress_screen_on_title"
+            android:summary="@string/notification_sound_suppress_screen_on_summary"
             android:defaultValue="true"
             android:order="32"/>
 
