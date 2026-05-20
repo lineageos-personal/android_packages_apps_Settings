@@ -13799,6 +13799,10 @@
     <string name="lockscreen_double_line_clock_summary">Clock size changes according to lock screen content</string>
     <!-- Lockscreen dynamic clock toggle [CHAR LIMIT=60] -->
     <string name="lockscreen_double_line_clock_setting_toggle">Dynamic clock</string>
+    <!-- Lockscreen weather toggle [CHAR LIMIT=60] -->
+    <string name="lockscreen_weather_title">Weather update</string>
+    <!-- Lockscreen weather summary [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_weather_summary">Display current weather update</string>
     <!-- Lock screen shortcuts preference [CHAR LIMIT=60] -->
     <string name="lockscreen_quick_affordances_title">Shortcuts</string>
     <!-- Summary for the lock screen button preference [CHAR LIMIT=60] -->
