@@ -100,6 +100,12 @@
             android:title="@string/lockscreen_weather_title"
             android:summary="@string/lockscreen_weather_summary"
             settings:controller="com.android.settings.display.LockscreenWeatherPreferenceController" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_charging_info"
+            android:title="@string/lockscreen_charging_info_title"
+            android:summary="@string/lockscreen_charging_info_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
     <PreferenceCategory
