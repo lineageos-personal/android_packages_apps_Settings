@@ -553,6 +553,13 @@ public class BiometricEnrollActivity extends InstrumentedActivity {
                 final boolean isOk =
                         isSuccessfulConfirmOrChooseCredential(requestCode, resultCode);
                 if (isOk && (mIsFaceEnrollable || mIsFingerprintEnrollable)) {
+                    if (!BiometricUtils.containsGatekeeperPasswordHandle(data)) {
+                        Log.w(TAG, "Missing gatekeeper password handle after credential "
+                                + "confirmation");
+                        setResult(RESULT_CANCELED);
+                        finish();
+                        return;
+                    }
                     // Apply forward animation during the transition from ChooseLock/ConfirmLock to
                     // SetupFingerprintEnrollIntroduction/FingerprintEnrollmentActivity
                     TransitionHelper.applyForwardTransition(this, TRANSITION_FADE_THROUGH);
@@ -711,7 +718,10 @@ public class BiometricEnrollActivity extends InstrumentedActivity {
         }
     }
 
-    private void updateGatekeeperPasswordHandle(@NonNull Intent data) {
+    private void updateGatekeeperPasswordHandle(@Nullable Intent data) {
+        if (!BiometricUtils.containsGatekeeperPasswordHandle(data)) {
+            return;
+        }
         mGkPwHandle = BiometricUtils.getGatekeeperPasswordHandle(data);
         if (mParentalConsentHelper != null) {
             mParentalConsentHelper.updateGatekeeperHandle(data);
