@@ -6094,5 +6094,52 @@
                 android:value="true" />
         </activity>
 
+        <!-- OPlus privacy password entry points used by stock Private Safe/FileEncryption. -->
+        <provider
+            android:name="com.oplus.settings.privacy.PrivacyStateProvider"
+            android:authorities="oplus.provider.settings.PrivacyStateProvider"
+            android:permission="oplus.permission.OPLUS_COMPONENT_SAFE"
+            android:exported="true"
+            android:multiprocess="false"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:name="com.oplus.settings.privacy.ChooseGenericPrivacy"
+            android:permission="oplus.permission.OPLUS_COMPONENT_SAFE"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="oplus.intent.action.settings.PRIVACY_PWD_CHOOSE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.oplus.settings.privacy.PrivacyPasswordActivity"
+            android:permission="oplus.permission.OPLUS_COMPONENT_SAFE"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="oplus.intent.action.settings.PRIVACY_PWD_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.oplus.settings.privacy.ConfirmGenericPrivacy"
+            android:permission="oplus.permission.OPLUS_COMPONENT_SAFE"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="oplus.intent.action.settings.PRIVACY_PWD_CONFIRM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
