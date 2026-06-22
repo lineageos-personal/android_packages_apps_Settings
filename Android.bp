@@ -149,6 +149,7 @@ android_library {
         "framework-virtualization.stubs.system",
         "telephony-common",
         "ims-common",
+        "oplus-fwk",
     ],
     flags_packages: [
         "aconfig_settings_flags",

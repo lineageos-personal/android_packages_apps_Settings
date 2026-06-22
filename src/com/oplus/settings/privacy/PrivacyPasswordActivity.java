@@ -81,7 +81,10 @@ public class PrivacyPasswordActivity extends Activity {
                 showErrorAndFinish("Incorrect password");
                 return;
             }
-            PrivacyPasswordState.clearPassword(this);
+            if (!PrivacyPasswordState.clearPassword(this, password)) {
+                showErrorAndFinish("Could not turn off privacy password");
+                return;
+            }
             setResult(RESULT_OK);
             finish();
         });
