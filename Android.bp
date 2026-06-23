@@ -130,6 +130,7 @@ android_library {
         "org.lineageos.platform.internal",
         "LineagePreferenceLib",
         "custom-preference",
+        "vendor.oplus.hardware.touch-V2-java",
     ],
 
     plugins: [
